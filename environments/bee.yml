@@ -1,0 +1,4 @@
+bee:
+    base_url: __BEE_BASE_URL__
+    client_id: __BEE_CLIENT_ID__
+    client_secret: __BEE_CLIENT_SECRET__

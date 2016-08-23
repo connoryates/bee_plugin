@@ -1,0 +1,13 @@
+<!doctype html>
+<html ng-app lang="en">
+  <head>
+    <title>BEE Plugin AngularJS + Perl5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  </head>
+  <body>
+    <div class="bee-plugin-main-container" ng-controller="BeePluginController" ng-init="initBeePlugin()">
+        <script src="https://app-rsrc.getbee.io/plugin/BeePlugin.js"></script>
+        <div id="bee-plugin-container"></div>
+    </div>
+  </body>
+</html>
