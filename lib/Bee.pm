@@ -1,8 +1,8 @@
 package Bee;
 use Dancer ':syntax';
 
-use Tracking::API::Plugins::Bee;
+use Bee::Routes::EmailEditor;
 
-use Tracking::API::Routes::Bee;
+use Bee::Plugins::EmailEditor;
 
 true;
