@@ -4,8 +4,8 @@
 
 **Work in progress**
 
-This is an example repo for setting the BEE email editor plugin found at: https://beefree.io/ that uses Perl5 with Dancer
-and AngularJS.
+This is an example repo for setting up the BEE email editor plugin (https://beefree.io/) that uses Perl5 with a Dancer
+web framework and AngularJS.
 
 ## Overview ##
 
