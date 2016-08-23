@@ -1,6 +1,6 @@
 package Bee::Plugins::EmailEditor;
 
-use Dancer::Syntax;
+use Dancer ':syntax';
 use Dancer::Plugin;
 
 use Bee::Controllers::EmailEditor;

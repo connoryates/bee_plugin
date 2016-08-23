@@ -5,6 +5,8 @@ use Dancer::Exception;
 
 use Bee::Plugins::EmailEditor;
 
+set serializer => 'JSON';
+
 get '/bee' => sub {
     template 'bee';
 };
