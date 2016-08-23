@@ -19,7 +19,7 @@ https://auth.getbee.io/apiauth as the ```base_url```.
     - ```client_id     => $YOUR_CLEINT_ID```
     - ```client_secret => $YOUR_CLIENT_SECRET```
   
-  You will receive a JSON structure back as the token. In this example, this request is made on the server side for security
+  You will receive a JSON structure back as the token. In this example, the request is made on the server side for security
   reasons.
   
 - You will load the plugin into your HTML with this ```src``` tag: 
