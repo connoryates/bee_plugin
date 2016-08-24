@@ -11,7 +11,7 @@ get '/bee' => sub {
     template 'bee';
 };
 
-get 'bee/client_config' => sub {
+get '/bee/client_config' => sub {
     my $config;
 
     try {
@@ -24,7 +24,7 @@ get 'bee/client_config' => sub {
     return $config;
 };
 
-get '/bee/create_email/load_template/:template_name' => sub {
+get '/bee/load_template/:template_name' => sub {
     my $template_name = param 'template_name' || '';
 
     send_error("Failed to load template", 500) unless defined $template_name;
@@ -40,7 +40,7 @@ get '/bee/create_email/load_template/:template_name' => sub {
     return $template;
 };
 
-post '/bee/create_email/save_email' => sub {
+post '/bee/save_email' => sub {
     my $params = params || {};
 
     foreach my $required (qw(json_file html_form template_name)) {
@@ -62,7 +62,7 @@ post '/bee/create_email/save_email' => sub {
     return $status;
 };
 
-post '/bee/create_email/save_template' => sub {
+post '/bee/save_template' => sub {
     my $params = params || {};
 
     foreach my $required (qw(json_file template_name)) {
@@ -85,7 +85,7 @@ post '/bee/create_email/save_template' => sub {
     return $status;
 };
 
-post '/bee/create_email/test_email' => sub {
+post '/bee/test_email' => sub {
     my $params = params || {};
 
     send_error("No email provided", 500) unless defined $params->{to};
@@ -105,7 +105,7 @@ post '/bee/create_email/test_email' => sub {
     return $status;       
 };
 
-post '/bee/create_email/autosave' => sub {
+post '/bee/autosave' => sub {
     my $params = params || {};
 
     send_error("Failed to autosave template", 500) unless defined $params->{json_file};
@@ -125,7 +125,7 @@ post '/bee/create_email/autosave' => sub {
     return $status;
 };
 
-get 'bee/token' => sub {
+get '/bee/token' => sub {
     my $token_manager = token_manager();
     return $token_manager->get_token;
 };
