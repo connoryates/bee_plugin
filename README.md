@@ -1,6 +1,6 @@
 ### bee_plugin ###
 
-## Perl5 and AngularJS example ##
+## Perl and AngularJS example ##
 
 **Work in progress**
 
