@@ -39,13 +39,13 @@ https://auth.getbee.io/apiauth as the ```base_url```.
     </div>
     ```
     
-- Lanch the web server with ```starman``` (a preforking web-server tool in Perl):
+- Lanch the web server with ```plackup```:
 
 ```bash
-      $ starman bin/app.pl
+      $ plackup bin/app.pl
 ```
 
-  Which will bind to: ```http://*:5000```
+  Which will bind to: ```http://0.0.0.0:5000```
       
 
 And that's it! More configuration features can be found on https://beefree.io/
