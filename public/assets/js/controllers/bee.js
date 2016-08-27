@@ -50,7 +50,7 @@ function __getTemplate(httpAgent, templateName) {
 
     httpAgent.get(
         '/bee/get_template',
-        template_name
+        templateData
     ).then(function(resp) {
         template = resp.data;
     });
