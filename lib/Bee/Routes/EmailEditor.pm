@@ -1,7 +1,7 @@
 package Bee::Routes::EmailEditor;
 
 use Dancer ':syntax';
-use Dancer::Exception;
+use Dancer::Exception qw(:all);
 
 use Bee::Plugins::EmailEditor;
 
